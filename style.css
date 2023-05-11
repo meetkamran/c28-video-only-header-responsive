@@ -1,0 +1,268 @@
+/* Reset CSS */
+
+img{
+    max-width: 100%;
+}
+
+html{scroll-behavior: smooth;}
+
+/* <!-- Header Section Start --> */
+.header{
+    background-color: #101446;
+}
+
+.logo{
+    width: 100px;
+    height: auto;
+}
+
+.logo img{
+    margin-top: 15px;
+}
+
+.menu{
+    list-style: none;
+    text-align: right;
+    margin-bottom: 0px;
+}
+.menu li{
+    display: inline-block;
+    line-height: 65px;
+}
+.menu li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    transition: .5s;
+    position: relative;
+}
+
+.menu li a:hover{
+    color: rgb(0, 255, 255);
+}
+
+.menu li a::before{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: rgb(0, 255, 255);
+    position: absolute;
+    top: 65%;
+    left: 20%;
+    transition: .5s;
+}
+.menu li a:hover::before{
+    width: 60%;
+}
+
+/* <!-- Header Section End --> */
+
+
+/* <!-- Banner Section Start --> */
+
+
+
+/* <!-- Banner Section End --> */
+
+.banner{
+    background: url(https://i.ibb.co/rk3b6Kk/intro-bg.jpg) no-repeat;
+    background-size: contain;
+    background-position: center -50px;
+    background-color: #090909;
+    color: #fff;
+    background-color: #090909;
+    padding: 250px 0px;
+    background-attachment: fixed;
+}
+
+.banner-txt{
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+/* <!-- Team Section Start --> */
+
+.team{
+    background-color: #bac1f3;
+}
+
+.btn-bg{
+    background-color: #337ab7;
+}
+
+.card{
+    border: none;
+    background-color: #bac1f3 !important;
+}
+
+/* <!-- Team Section End --> */
+
+/* <!-- About Section Start --> */
+
+.about{
+    background-color: #c2d4ea;
+}
+
+.cv{
+    text-align: left;
+}
+
+.p-txt{
+    margin-left: 75px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.cv h6{
+    margin-bottom: 20px;
+}
+
+.about-right{
+    color: #444444;
+}
+
+/* <!-- About Section End --> */
+
+
+/* <!-- Contact Us Section Start --> */
+
+.contact{
+    color: #444444;
+}
+
+#name{
+    width: 100%;
+    padding-left: 20px;
+}
+#email{
+    width: 100%;
+    padding-left: 20px;
+}
+#subject{
+    width: 100%;
+    padding-left: 20px;
+}
+#message{
+    width: 100%;
+    padding-left: 20px;
+}
+
+/* <!-- Contact Us Section End --> */
+
+/* <!-- Footer Section Start --> */
+
+.footer-sec{
+    background-color: #0062d3;
+    color: #fff;
+    padding: 20px 0px;
+}
+
+.footer-sec a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+.mobile-menu-check, .mobile-menu-icon{
+    display: none;
+}
+
+/* <!-- Footer Section End --> */
+
+
+/* ######################
+    Responsive
+###################### */
+
+@media all and (max-width: 1500px){
+    #home{
+            background-position: center 42px;
+            padding: 120px 0px;
+        }
+    }
+
+
+@media all and (max-width: 1200px){
+    .menu li {
+        line-height: 35px;
+    }
+    .menu li a {
+        padding: 20px 13px;
+        font-size: 18px;
+    }
+
+}
+
+@media all and(max-width: 1200px) {
+    .card {
+        width: 12rem;
+    }
+}
+
+@media all and (max-width: 992px){
+    .mobile-menu-check, .mobile-menu-icon{
+        display: block;
+    }
+
+
+    .mobile-menu-check:checked ~ .menu{
+        visibility: visible;
+        opacity: 1;
+        height: 100%;
+    }
+    .menu{
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+        margin-top: 80px;
+    }
+    .menu li{
+        display: block;
+        line-height: 30px;
+        text-align: left;
+    }
+    .mobile-menu-icon{
+        pointer-events: none;
+        font-size: 58px;
+        color: #fff;
+        pointer-events: none;
+        position: absolute;
+        right: 65px;
+        top: -7px;
+    }
+    .mobile-menu-check{
+        position: absolute;
+        right: 65px;
+        top: 14px;
+        width: 50px;
+        height: 50px;
+        opacity: 0;
+    }
+}
+
+@media all and (max-width: 768px){
+    .menu li{
+        display: block;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .menu {
+        margin-top: 19px;
+    }
+    #home {
+        background-position: center 102px;
+        padding: 78px 0px;
+    }
+
+}
+
+
+
+
+
+
+
